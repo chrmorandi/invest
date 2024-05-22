@@ -1,7 +1,7 @@
 # netbeans, vscode and phpstorm project files
 nbproject
 .vscode
-.idea
+/.idea/
 
 # zend studio for eclipse project files
 .buildpath
