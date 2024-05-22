@@ -1,41 +1,42 @@
-/vagrant/
-/phantomjs-2.1.1-linux-x86_64/
-/bot/site_eduardo_acoes.py
-/.vagrant/
-/nbproject/
-/bot/easy.py
-/sistema.zip
-/instalacao.sh
-/package.box
-/db/
-/node_modules/
-/web/js/node_modules/
-/doc/videos/
-/vendor/
-/back/
-/bot/dados/
-/web/js/package-lock.json
-/bot/back/
-nbproject/project.properties
-bot/geckodriver.log
-nbproject/project.properties
-nbproject/project.xml
-web/atualiza_acao.log
-dados/atualiza_acao.txt
-dados/banco_inter.pdf
-dados/cambio.csv
-dados/czCcf1HN.html
-dados/easy.csv
-dados/empresas_bolsa.csv
-dados/Exportar_custodia.csv
-dados/fundamentos.csv
-dados/orders.csv
-dados/preco_acao.csv
-dados/.~lock.esmpresa_bolsa.csv#
-arquivos/
-dados/.~lock.preco_acao.csv#
-/.vscode/
-assets/
+# netbeans, vscode and phpstorm project files
+nbproject
+.vscode
+.idea
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+composer.lock
+
+# Mac DS_Store Files
+.DS_Store
+._.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+phpunit.xml
+
+# box vagrant
+.vagrant
+*.box
+*.log
+
+# Dumps do banco de dados
+*dump*
+*db_invest*
 *.sql*
-log-console.log
-!db_teste.sql
+*VBoxSVC*
+
+#testes
+tests/_output/
+!/docker-compose/db_teste/data_test.sql
