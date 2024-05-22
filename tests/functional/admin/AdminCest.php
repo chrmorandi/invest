@@ -1,6 +1,6 @@
 <?php
 
-namespace app\tests\functional\admin;
+namespace tests\functional\admin;
 
 use app\models\admin\User;
 use FunctionalTester;

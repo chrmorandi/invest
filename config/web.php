@@ -1,50 +1,47 @@
 <?php
 
+Yii::setAlias('@app', dirname(__DIR__) . '/src');
+
 $params = require __DIR__ . '/params.php';
-$db = require __DIR__ . '/db.php';
 
 if (YII_ENV_TEST) {
     $db = require __DIR__ . '/test_db.php';
+} else {
+    $db = require __DIR__ . '/db.php';
 }
-
-
-Yii::setAlias('arquivos', dirname(__DIR__) . '/arquivos');
-Yii::setAlias('dados', dirname(__DIR__) . '/dados');
 
 use \kartik\datecontrol\Module;
 
-
 $config = [
-    'id' => 'Invest',
+    'id' => 'invest',
     'name' => 'INVEST',
-    'basePath' => dirname(__DIR__),
+    'basePath' => dirname(__DIR__) . '/src',
+    'vendorPath' => dirname(__DIR__) . '/vendor',
+    'runtimePath' => dirname(__DIR__) . '/runtime',
     'bootstrap' => ['log'],
-    //'timeZone' => 'Europe/London',
     'timeZone' => 'America/Sao_Paulo',
     'language' => 'pt-BR',
     'sourceLanguage' => 'pt-BR',
+    'defaultRoute' => 'invest',
+    'controllerNamespace' => 'app\controllers',
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
     ],
     'components' => [
-
-
         'formatter' => [
             'numberFormatterOptions' => [
                 NumberFormatter::MIN_FRACTION_DIGITS => 0,
                 NumberFormatter::MAX_FRACTION_DIGITS => 12,
             ]
         ],
-
-        'view' => [
-            'theme' => [
-                'pathMap' => [
-                    '@app/views' => '@app/lib/componentes/hail812/yii2-adminlte3/src/views'
-                    // '@app/layou' => '@app/lib/componentes/hail812/yii2-adminlte3/src/views/'
-                ],
-            ],
-        ],
+//        'view' => [
+//            'theme' => [
+//                'pathMap' => [
+//                    '@app/views' => '@app/lib/componentes/hail812/yii2-adminlte3/src/views'
+//                ],
+//            ],
+//        ],
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => true,

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\tests\_support\unit;
+namespace tests\_support\unit;
 
 use app\models\financas\Operacao;
 use app\models\financas\ItensAtivo;

@@ -1,6 +1,6 @@
 <?php
 
-namespace app\tests\functional\financas;
+namespace tests\functional\financas;
 
 use app\models\financas\AcaoBolsa;
 use FunctionalTester;

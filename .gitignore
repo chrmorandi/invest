@@ -1,7 +1,7 @@
 # netbeans, vscode and phpstorm project files
 nbproject
 .vscode
-/.idea/
+.idea
 
 # zend studio for eclipse project files
 .buildpath
@@ -38,5 +38,4 @@ phpunit.xml
 *VBoxSVC*
 
 #testes
-tests/_output/
 !/docker-compose/db_teste/data_test.sql

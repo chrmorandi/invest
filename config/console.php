@@ -16,12 +16,13 @@ $config = [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
         '@tests' => '@app/tests',
+        '@invest' => '@app/src',
     ],
     'controllerMap' => [
         'migrate' => [
             'class' => 'yii\console\controllers\MigrateController',
             'migrationNamespaces' => [
-                'app\migrations',
+                'invest\migrations',
                 'yii\queue\db\migrations',
             ],
             'migrationPath' => null, // allows to disable not namespaced migration completely

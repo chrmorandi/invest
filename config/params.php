@@ -15,6 +15,4 @@ return [
     'icon-framework' => \kartik\icons\Icon::FAS,  // Font Awesome Icon framework
     'bsDependencyEnabled' => false,
     'userAdminPadraoId' => 2 //id do usário que será salvo ao sicronizar preço da ação
-
-
 ];

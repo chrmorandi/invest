@@ -2,8 +2,8 @@
 
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'pgsql:host=db_invest;dbname=invest',
-    'username' => 'postgres',
+    'dsn' => 'pgsql:host=db_invest;dbname=db_invest',
+    'username' => 'invest',
     'password' => 'invest',
     'charset' => 'utf8',
 
